@@ -46,3 +46,8 @@ Example initialization with these functions:
 	AudioDriver<dummyEntity> driver(dummyVel, dummyPos, dummyValid);
     driver.playMenuSound("impact_1.ogg");
 ```
+
+## Use
+Include AudioDriver.h for the entire library.
+
+In your main game loop, you should be calling setListenerPosition, gameSoundUpdate, and menuSoundUpdate to make sure that the audio sources move with their entities.
